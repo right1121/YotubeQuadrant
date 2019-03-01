@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    color: azure;
+}
+div.video-space div{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+}

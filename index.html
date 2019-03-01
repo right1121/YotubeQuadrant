@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube分割表示</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/main.css" />    
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>        
+    </head>
+    <body>
+        <div class="uk-child-width-expand uk-grid-collapse" uk-grid>
+            <div class="uk-inline video-space">
+                <div class="uk-position-small uk-position-top-left uk-overlay-primary">1</div>
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/WEfUjy2J214" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" name="1" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+            </div>
+            <div class="uk-inline video-space">
+                <div class="uk-position-small uk-position-top-left uk-overlay-primary">2</div>
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/1jiIUbwRFf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" name="2" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+            </div>
+        </div>
+
+        <div class="uk-child-width-expand uk-grid-collapse" uk-grid>
+            <div class="uk-inline video-space">
+                <div class="uk-position-small uk-position-top-left uk-overlay-primary">3</div>
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/3m8vSA1YL-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" name="3" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+            </div>
+            <div>
+                <div uk-grid>
+                    <div class="uk-margin uk-width-1-1 uk-section">
+                        <h2>動画変更フォーム</h2>
+                        <form id="changeUrl_form">
+                            <div class="uk-margin uk-child-width-expand" uk-grid>
+                                <label><input class="uk-radio" type="radio" name="target" value="1"/>1</label>
+                                <label><input class="uk-radio" type="radio" name="target" value="2"/>2</label>
+                                <label><input class="uk-radio" type="radio" name="target" value="3"/>3</label>
+                            </div>
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" id="url" value="https://" required>
+                            </div>
+                            <div class="uk-margin uk-child-width-expand">
+                                <button class="uk-button uk-button-primary" id="changeUrl">動画を変更する</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
